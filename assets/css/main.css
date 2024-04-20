@@ -658,10 +658,28 @@ section {
   line-height: 0;
 }
 
+.mission-about {
+  padding: 10px;
+  background-color: #007aff;
+  color: #fff;
+  border-radius: 8px;
+  width: 15rem
+}
+.mission-about a , .mission-about2 a {
+  color: #fff;
+}
+.mission-about2 {
+  background-color: rgba(14, 29, 52, 0.9);
+  color: #fff;
+  border-radius: 8px;
+  width: 15rem;
+  padding: 10px;
+}
+
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
-  color: #19335c;
+  /* color: #19335c; */
 }
 
 .about .content ul p {
