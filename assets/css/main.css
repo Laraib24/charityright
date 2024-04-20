@@ -284,14 +284,19 @@ section {
 --------------------------------------------------------------*/
 .header {
   transition: all 0.5s;
+  background: #fff;
   z-index: 997;
-  padding: 30px 0;
+  padding: 10px 0;
+}
+.header-logo {
+  width: 40%;
 }
 
 .header.sticked {
-  background: rgba(14, 29, 52, 0.9);
+  background: #fff;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
+  position: fixed;
 }
 
 .header .logo img {
@@ -321,6 +326,7 @@ section {
     display: flex;
     list-style: none;
     align-items: center;
+    
   }
 
   .navbar li {
@@ -336,7 +342,7 @@ section {
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+    color: #0e1d34;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -352,7 +358,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #0d42ff;
   }
 
   .navbar .get-a-quote,
@@ -716,12 +722,50 @@ section {
   }
 }
 
+.how-work-about {
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.supporters-section {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #f4f1ee;
+
+}
+.supportes-section-img img {
+  width: 15%
+}
+.how-work-img {
+  text-align: center;
+}
+.how-work-img img {
+  width: 8%
+}
+.how-work-img p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.about-work-inner-box {
+  /* width: 30%; */
+  height: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 25px;
+  text-align: center;
+  color: #001973;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
   /* color: #19335c; */
 }
-
+.other-display-audit {
+  display: none;
+}
+#audit-system:hover + #other-info-audit {
+  display: block;
+}
 .about .content ul p {
   font-size: 15px;
 }
@@ -808,7 +852,47 @@ section {
     opacity: 0;
   }
 }
-
+.about-work-content {
+    position: relative;
+    overflow: hidden;
+}
+ .overlay-content {
+   position: absolute;
+   top: 8px;
+   left: 100%;
+   width: 220px;
+   height: 300px;
+   background-color: rgba(14, 29, 52, 0.9);
+   transition: left 0.5s ease;
+   border-top-right-radius: 25px;
+   border-bottom-right-radius: 25px;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+ }
+ .overlay-content p {
+  font-size: 12px;
+  color: #eee
+ }
+.about-details-button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: #0d42ff;
+  color: #fff;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 8px;
+}
+ .about-work-content:hover .overlay-content {
+   left: 30%;
+ }
+ .about-link-work {
+  color: #fff
+ }
+ .about-link-work:hover {
+   color: #fff
+ }
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1068,7 +1152,7 @@ section {
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .faq .accordion-item {
