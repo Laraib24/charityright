@@ -663,7 +663,7 @@ section {
   background-color: #007aff;
   color: #fff;
   border-radius: 8px;
-  width: 15rem
+  width: 16rem
 }
 .mission-about a , .mission-about2 a {
   color: #fff;
@@ -672,8 +672,48 @@ section {
   background-color: rgba(14, 29, 52, 0.9);
   color: #fff;
   border-radius: 8px;
-  width: 15rem;
+  width: 16rem;
   padding: 10px;
+}
+.about-mission-img-container {
+  margin-left: 100px;
+  border-radius: 10rem;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.about-mission-img-container img {
+  width: 40%;
+  border-radius: 260px;
+  border: 4px dotted transparent;
+  padding: 20px;
+  position: relative;
+  left: 90px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-mission-img-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 40%;
+  height: 100%;
+  border-radius: 250px;
+  border: 4px dotted #007aff;
+  animation: borderCircle 14s infinite alternate linear;
+}
+
+@keyframes borderCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .about .content ul h5 {
