@@ -537,7 +537,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    color: rgb(14, 29, 52);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
