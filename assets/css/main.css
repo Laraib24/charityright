@@ -1323,7 +1323,25 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 30px;
   width: 100%;
 }
-
+.stats-item {
+  border: 2px solid #eeeeee71;
+  border-bottom: none;
+  margin-top: -30px;
+}
+.stats-item-img {
+  width: 25%;
+  height: 70px;
+  margin: 0 auto;
+  background-color: #eeeeee;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats-item-img:hover {
+  transform: rotate(360deg);
+  transition: transform 0.9s ease;
+}
 .stats-counter .stats-item span {
   font-size: 48px;
   display: block;
@@ -1845,7 +1863,8 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 .hero {
   width: 100%;
   min-height: 50vh;
-  background-color: var(--color-secondary);
+  /* background-color: var(--color-secondary); */
+  background-color: rgba(0, 0, 0, 0.827);
   background-image: url("../img/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -2054,4 +2073,13 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 .footer .credits a {
   color: #fff;
+}
+.mySlides {
+  display: none;
+}
+.sliderShow {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  object-fit: contain;
 }
